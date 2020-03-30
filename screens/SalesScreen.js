@@ -58,9 +58,7 @@ export default HomeScreen = props => {
   );
 };
 
-// const URL = `http://newsapi.org/v2/top-headlines?country=jp&apiKey=${Constants.manifest.extra.newsApiKey}`;
-// const URL = `http://newsapi.org/v2/everything?q=2020年冬アニメ&apiKey=${Constants.manifest.extra.newsApiKey}`;
-const URL = `http://newsapi.org/v2/everything?q=ゲーム+-セール&apiKey=${Constants.manifest.extra.newsApiKey}`;
+const URL = `http://newsapi.org/v2/everything?q=ゲーム+セール&apiKey=${Constants.manifest.extra.newsApiKey}`;
 
 const styles = StyleSheet.create({
   container: {

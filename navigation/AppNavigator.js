@@ -8,9 +8,11 @@ import ClipScreen from "../screens/ClipScreen";
 import { FontAwesome } from "@expo/vector-icons";
 import AnimationScreen from "../screens/AnimationScreen";
 import GameScreen from "../screens/GameScreen";
+import SalesScreen from "../screens/SalesScreen";
 import CoronaScreen from "../screens/CoronaScreen";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 import { SafeAreaView, StyleSheet, ScrollView } from "react-native";
+
 const Stack = createStackNavigator();
 // const Tab = createBottomTabNavigator();
 const Tab = createMaterialTopTabNavigator();
@@ -27,6 +29,19 @@ const GameStack = () => {
     </Stack.Navigator>
   );
 };
+const SaleStack = () => {
+  return (
+    <Stack.Navigator>
+      <Stack.Screen
+        name="Sales"
+        component={SalesScreen}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen name="Article" component={ArticleScreen} />
+    </Stack.Navigator>
+  );
+};
+
 const CoronaStack = () => {
   return (
     <Stack.Navigator>
@@ -102,6 +117,7 @@ export default AppNavigator = () => {
           <Tab.Screen name="Home" component={HomeStack} />
           <Tab.Screen name="Anime" component={AnimeStack} />
           <Tab.Screen name="Game" component={GameStack} />
+          <Tab.Screen name="Sales" component={SaleStack} />
           <Tab.Screen name="Corona" component={CoronaStack} />
           <Tab.Screen name="Clip" component={ClipStack} />
         </Tab.Navigator>
