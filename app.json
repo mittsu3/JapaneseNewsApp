@@ -1,10 +1,14 @@
 {
   "expo": {
-    "name": "Blank Template",
-    "slug": "news-app",
+    "name": "NewsApp2020",
+    "slug": "news-app-2020",
     "privacy": "public",
     "sdkVersion": "36.0.0",
-    "platforms": ["ios", "android", "web"],
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -16,7 +20,9 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": false
     },
@@ -25,6 +31,8 @@
     },
     "extra": {
       "newsApiKey": "9e3bf0e26d7049b2a03422ec62c2fadb"
-    }
+    },
+    "description": "",
+    "githubUrl": "https://github.com/mittsu3/JapaneseNewsApp"
   }
 }
