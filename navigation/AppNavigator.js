@@ -12,6 +12,12 @@ import SalesScreen from "../screens/SalesScreen";
 import CoronaScreen from "../screens/CoronaScreen";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 import { SafeAreaView, StyleSheet, ScrollView } from "react-native";
+import {
+  AdMobBanner,
+  PublisherBanner,
+  AdMobInterstitial,
+  AdMobRewarded
+} from "expo";
 
 const Stack = createStackNavigator();
 // const Tab = createBottomTabNavigator();

@@ -6,6 +6,7 @@ import { addClip } from "../store/actions/user";
 import { deleteClip } from "../store/actions/user";
 import ClipButton from "../components/ClipButton";
 import Loading from "../components/Loading";
+import Ads from "../ads/ads";
 
 const styles = StyleSheet.create({
   container: {
@@ -40,6 +41,7 @@ export default ArticleScreen = ({ route }) => {
         startInLoadingState={true}
         renderLoading={() => <Loading />}
       />
+      <Ads />
     </SafeAreaView>
   );
 };

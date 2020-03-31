@@ -2,6 +2,7 @@ import React from "react";
 import { StyleSheet, SafeAreaView, Text, FlatList } from "react-native";
 import { useSelector } from "react-redux";
 import ListItem from "../components/ListItem";
+import Ads from "../ads/ads";
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -26,6 +27,7 @@ export default ClipScreen = ({ navigation }) => {
         )}
         keyExtractor={(item, index) => index.toString()}
       />
+      <Ads />
     </SafeAreaView>
   );
 };

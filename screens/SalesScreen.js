@@ -9,6 +9,7 @@ import ListItem from "../components/ListItem";
 import Loading from "../components/Loading";
 import Constants from "expo-constants";
 import axios from "axios";
+import Ads from "../ads/ads";
 
 export default HomeScreen = props => {
   const { navigation } = props;
@@ -54,6 +55,7 @@ export default HomeScreen = props => {
         }
       />
       {loading && <Loading />}
+      <Ads />
     </SafeAreaView>
   );
 };
@@ -86,5 +88,9 @@ const styles = StyleSheet.create({
   subText: {
     fontSize: 12,
     color: "gray"
+  },
+  bottomBanner: {
+    position: "absolute",
+    bottom: 0
   }
 });
